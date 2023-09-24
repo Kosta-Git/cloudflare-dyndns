@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"cf-dyndns/pkg"
+	"github.com/Kosta-Git/cloudflare-dyndns/pkg"
 	"github.com/spf13/cobra"
 )
 

@@ -1,6 +1,6 @@
 package main
 
-import "cf-dyndns/cmd"
+import "github.com/Kosta-Git/cloudflare-dyndns/cmd"
 
 func main() {
 	cmd.Execute()
