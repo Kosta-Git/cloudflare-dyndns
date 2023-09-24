@@ -1,4 +1,4 @@
-module cf-dyndns
+module github.com/Kosta-Git/cloudflare-dyndns
 
 go 1.21
 
