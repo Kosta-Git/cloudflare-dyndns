@@ -12,12 +12,10 @@ func CreateServiceFile() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	realPath, err := filepath.EvalSymlinks(executableLocation)
 	if err != nil {
 		panic(err)
 	}
-
 	serviceContent := fmt.Sprintf(`[Unit]
 Description=Cloudflare Dynamic DNS Updater
 After=network.target

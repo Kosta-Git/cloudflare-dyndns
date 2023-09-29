@@ -37,10 +37,8 @@ func init() {
 	viper.AddConfigPath("/etc/cf-dyndns")
 	viper.AddConfigPath(".")
 	viper.AutomaticEnv()
-
 	if err := viper.ReadInConfig(); err != nil {
 		log.Fatalf("Error reading config file: %v\nConfig file must be either in . or /etc/cf-dyndns, and must be named cf-dyndns\n", err)
 	}
-
 	rootCmd.AddCommand(startCmd)
 }
